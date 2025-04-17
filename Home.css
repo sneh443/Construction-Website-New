@@ -1,0 +1,54 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Workers_Website.Home" % >
+
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server" >
+<title > Home - Worker Website</title >
+<style >
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    padding: 30px;
+    text-align: center;
+}
+
+.welcome-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.home-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+</style >
+</head >
+<body >
+<form id="form1" runat="server" >
+<div class="header" >
+<h1 > Worker Website</h1 >
+</div >
+
+<div class="container" >
+<p class="welcome-text" > Welcome to the home of skilled workers and job seekers!</p >
+<img class="home-image" src="Images/worker.jpg" alt="Worker Image" / >
+<p > We connect employers with top talent across various industries.</p >
+</div >
+</form >
+</body >
+</html >

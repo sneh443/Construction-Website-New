@@ -1,0 +1,6 @@
+﻿.hero {
+    background-image: url('home.jpg'); /* or url('./images/home.jpg') depending on your folder structure */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Workers_Website.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>UrbanBuild - Crafting Wonders</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #1f1f1f;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            align-items: center;
+            background-color: #111;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        .menu .btn {
+            background-color: orange;
+            padding: 8px 15px;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .hero-left {
+            max-width: 50%;
+        }
+
+        .hero-left h1 {
+            font-size: 48px;
+            line-height: 1.2;
+        }
+
+        .hero-left p {
+            margin: 20px 0;
+            color: #ccc;
+        }
+
+        .hero-buttons a {
+            margin-right: 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .btn-yellow {
+            background-color: orange;
+            color: black;
+        }
+
+        .btn-outline {
+            border: 2px solid orange;
+            color: orange;
+        }
+
+        .hero-right .img-box {
+            position: relative;
+            width: 300px;
+        }
+
+        .hero-right img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .info-box {
+            position: absolute;
+            bottom: -10px;
+            right: -20px;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 5px solid orange;
+            text-align: center;
+        }
+
+        /* Simple Footer */
+        
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="logo">Urban<span style="color:orange">Build</span></div>
+            <div class="menu">
+                <a href="Home.aspx">Home</a>
+                <a href="About.aspx">About Us</a>
+                <a href="Contact.aspx">Contact Us</a>
+                <a href="Personal_Details.aspx">Personal Details</a>
+                <a href="Login.aspx" class="btn">Login</a>
+                <a href="Signup.aspx" class="btn">Sign Up</a>
+            </div>
+        </div>
+
+        <!-- Content from pages -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+        <!-- Simple footer -->
+        
+    </form>
+</body>
+</html>
